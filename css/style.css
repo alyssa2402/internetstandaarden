@@ -1,5 +1,5 @@
 /*algemeen*/
-
+/* bronnen toevoegen */
 html, body {
     margin: 0;
     padding: 0;
@@ -26,6 +26,13 @@ h1 {
     font-size: 3em;
     margin-bottom: 0.5em;
     color: #D81B60;
+}
+
+/* tekst naar andere html pagina */
+
+.index-link a {
+    color: #D81B60;
+    text-decoration: none;
 }
 
 /* Navigatie */
@@ -63,7 +70,6 @@ nav {
     transition: background-color 0.3s ease, color 0.3s ease; 
 }
 
-
 .navlijst a:hover {
     background-color: #bc1754; 
     color: #e2e0d9;
@@ -82,13 +88,11 @@ nav {
 
 .intro {
     display: flex;
-    align-items: center;
-    justify-content: space-between;
     padding: 2em;
     margin-top: 3em;
 }
 
-.intro-tekst {
+.intro article {
     flex: 1;
     max-width: 50%;
     padding-right: 2em;
@@ -118,23 +122,25 @@ nav {
     padding: 5em 10vw;
 }
 
-.polaroid-frame {
+.polaroid-sectie div{
     text-align: center;
     flex: 1;
     padding-top: 2em;
 }
 
-.polaroid-frame img {
+.polaroid-sectie img {
     width: 70%;
     height: auto;
     margin-top: 5em;
 }
 
-.polaroid-frame p {
+.polaroid-sectie p {
     margin-top: 1.5em;
-    font-size: 0.9em;
+    font-size: 1.0em;
     max-width: 100%;
 }
+
+
 
 /* Video sectie */
 .video-sectie {
@@ -147,7 +153,6 @@ nav {
 }
 
 .video-sectie video {
-    width: 80%;
     max-width: 90vw;
     height: auto;
     max-height: 50vh;
@@ -280,7 +285,7 @@ footer {
         text-align: center;
     }
 
-    .intro-tekst {
+    .intro article{
         max-width: 100%;
         padding-right: 0;
     }
@@ -296,7 +301,7 @@ footer {
         padding: 2em 5vw;
     }
 
-    .polaroid-frame img {
+    .polaroid-sectie img {
         max-width: 90%;
     }
 

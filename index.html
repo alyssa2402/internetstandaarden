@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Podcast</title>
-    <link rel="stylesheet" href="/css/style.css">
+    <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
@@ -16,9 +16,9 @@
                 <img class="logo" src="img/kleinepauze_logo.png" alt="logo">
             </a>
             <ul class="navlijst">
-                <li class="nav-select"><a href="index.html">Home</a></li>
-                <li class="nav-select"><a href="overons.html">Over ons</a></li>
-                <li class="nav-select"><a href="afleveringen.html">Afleveringen</a></li>
+                <li class="actief"><a href="index.html">Home</a></li>
+                <li><a href="overons.html">Over ons</a></li>
+                <li><a href="afleveringen.html">Afleveringen</a></li>
             </ul>
         </nav>
     </header>
@@ -27,7 +27,7 @@
     <main>
 
         <section class="intro">
-            <article class="intro-tekst">
+            <article>
                 <h1>Kleine Pauze</h1>
                 <p> Welkom luisteraars. Wij zijn Alyssa, Roos en Fay, een groep studenten die dol zijn op het delen van
                     onze
@@ -46,44 +46,46 @@
 
 
         <section class="polaroid-sectie">
-            <div class="polaroid-frame">
+            <div>
                 <img src="img/roos_polaroid.jpg" alt="Polaroid Roos">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+                <p class="index-link">
+                    <a href="overons.html">Hii ik ben Roos, een...</a>
+                </p>
             </div>
 
-            <div class="polaroid-frame">
+            <div>
                 <img src="img/alyssa_polaroid.jpg" alt="Polaroid Alyssa">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+                <p class="index-link">
+                    <a href="overons.html">Heyhooi, ik ben Alyssa, een...</a>
+                </p>
             </div>
 
-            <div class="polaroid-frame">
+            <div>
                 <img src="img/fay_polaroid.jpg" alt="Polaroid Fay">
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit</p>
+                <p class="index-link">
+                    <a href="overons.html">Ik ben Fay, een...</a>
+                </p>
             </div>
         </section>
 
         <section class="video-sectie">
             <video controls>
-                <source src="videos/newyork_2023.mp4" type="video/mp4">
-                Je browser ondersteunt deze video niet. Overweeg een andere browser te gebruiken.
+                <source src="videos/snippet_klein.mp4" type="video/mp4">
+                De browser ondersteunt deze video niet.
             </video>
-            <p>Een van onze afleveringen...</p>
+            <p class="index-link">
+                <a href="afleveringen.html">Een van onze afleveringen...</a>
+            </p>
         </section>
 
     </main>
 
+    <!-- https://www.shecodes.io/athena/63954-how-to-link-an-email-in-html -->
     <footer>
-
-        <div class="footer-content">
-            <p>&copy; 2024 Kleine Pauze. Alle rechten voorbehouden.</p>
-            <div class="social-media">
-                <a href="https://www.instagram.com" target="_blank" aria-label="Instagram">Instagram</a> |
-                <a href="https://www.twitter.com" target="_blank" aria-label="Twitter">Twitter</a> |
-                <a href="https://www.facebook.com" target="_blank" aria-label="Facebook">Facebook</a>
-            </div>
-        </div>
-
-
+        <p>Heb je een vraag of feedback?</p>
+        <p>Of lijkt het je leuk om met ons samen te werken?</p>
+        <p>Neem dan contact met ons op via:</p>
+        <p>E-mailadres: <a href="mailto:info@kleinepauze.nl" class="text-link">info@kleinepauze.nl</a></p>
     </footer>
 
 </body>
